@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.park19930724.monstershot">
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/char_a_01"
+        android:label="몬스터"
+        android:roundIcon="@drawable/char_a_01"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.park19930724.monstershot.IntroActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.park19930724.monstershot.MainActivity" android:screenOrientation="landscape" ></activity>
+        <activity android:name="com.park19930724.monstershot.GameActivity"  android:screenOrientation="landscape"></activity>
+        <activity android:name="com.park19930724.monstershot.GameoverActivity" android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>
